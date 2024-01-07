@@ -3,21 +3,21 @@
     <Banner />
 
     <main class="main-container">
-      <h2>Monte seu burguer:</h2>
-      <BurguerForm />
+      <h1>Monte seu Burger</h1>
+      <BurgerForm />
     </main>
   </div>
 </template>
 
 <script>
 import Banner from "../components/Banner.vue";
-import BurguerForm from "../components/BurguerForm.vue";
+import BurgerForm from "../components/BurgerForm.vue";
 
 export default {
   name: "HomeView",
   components: {
     Banner,
-    BurguerForm
+    BurgerForm
   },
 };
 

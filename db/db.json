@@ -79,39 +79,28 @@
   ],
   "orders": [
     {
-      "name": "Davi",
-      "bread": "3 Queijos",
+      "name": "Cíntia Fernanda",
+      "bread": "Parmesão e Orégano",
       "meat": "Picanha",
       "options": [
         "Bacon",
         "Cheddar",
         "Tomate",
-        "Cebola roxa"
+        "Pepino"
       ],
       "status": "Solicitado",
-      "id": 2
+      "id": 1
     },
     {
-      "name": "Cíntia",
+      "name": "Davi",
       "bread": "Italiano Branco",
       "meat": "Alcatra",
       "options": [
         "Bacon",
-        "Cheddar",
-        "Cebola roxa"
+        "Salame"
       ],
-      "status": "Em produção",
-      "id": 4
-    },
-    {
-      "name": "Aline",
-      "bread": "Integral",
-      "meat": "Veggie burger",
-      "options": [
-        "Pepino"
-      ],
-      "status": "Finalizado",
-      "id": 7
+      "status": "Solicitado",
+      "id": 2
     }
   ]
 }

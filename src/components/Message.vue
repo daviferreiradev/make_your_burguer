@@ -17,11 +17,13 @@ export default {
 </script>
 
 <style scoped>
-.message-container {
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px 0;
-}
+    .message-container {
+        color: #004085;
+        background-color: #cce5ff;
+        border: 2px solid #b8daff;
+        border-radius: 5px;
+        padding: 4px 16px;
+        max-width: 400px;
+        margin: 32px auto;
+    }
 </style>

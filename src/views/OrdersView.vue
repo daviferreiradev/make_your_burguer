@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>Gerenciar pedidos:</h1>
+  <div class="main-container">
+    <h1>Gerenciar Pedidos</h1>
     <Dashboard />
   </div>
 </template>

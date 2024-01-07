@@ -1,20 +1,20 @@
 <template>
     <Message :msg="msg" v-show="msg" />
 
-    <table id="burguer-table">
+    <table id="burger-table">
         <thead>
-            <tr >
+            <tr>
                 <th>#</th>
                 <th>Nome</th>
                 <th>Pão</th>
                 <th>Carne</th>
                 <th>Opcionais</th>
-                <th>Status</th>
+                <th>Ações</th>
             </tr>
         </thead>
 
         <tbody>
-            <tr v-for="order in orders" :key="order.id">
+            <tr class="burger-table-row" v-for="order in orders" :key="order.id">
                 <td>{{ order.id }}</td>
                 <td>{{ order.name }}</td>
                 <td>{{ order.bread }}</td>
@@ -33,9 +33,7 @@
                             {{ s.type }}
                         </option>
                     </select>
-                </td>
 
-                <td>
                     <button class="delete-btn" @click="deleteOrder(order.id)">Cancelar</button>
                 </td>
             </tr>
@@ -54,7 +52,7 @@ export default {
     data() {
         return {
             orders: null,
-            burguer_id: null,
+            burger_id: null,
             status: [],
             msg: null
         }
@@ -113,3 +111,61 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+#burger-table {
+    width: 80%;
+    height: 51vh;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #333;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+}
+
+#burger-table th, #burger-table td {
+    text-align: left;
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+#burger-table th {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+#burger-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+#burger-table .burger-table-row {
+    transition: all 0.3s ease-in-out;
+}
+
+#burger-table select, #burger-table .delete-btn {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+#burger-table select {
+    border: 1px solid #ddd;
+}
+
+#burger-table .delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 12px;
+}
+
+#burger-table .delete-btn:hover {
+    background-color: #ff6666;
+}
+
+ul {
+    margin: 0;
+    padding-left: 16px;
+}
+</style>
